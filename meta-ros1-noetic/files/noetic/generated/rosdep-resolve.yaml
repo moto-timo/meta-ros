@@ -15,6 +15,12 @@ assimp:
 - assimp@openembedded-core
 assimp-dev:
 - assimp@openembedded-core
+atlas:
+- ${ROS_UNRESOLVED_DEP-atlas}
+autoconf:
+- autoconf@openembedded-core
+automake:
+- automake@openembedded-core
 avahi-daemon:
 - avahi@openembedded-core
 benchmark:
@@ -33,6 +39,8 @@ bzip2:
 - bzip2@openembedded-core
 ca-certificates:
 - ca-certificates@openembedded-core
+camera_info_manager_py:
+- ${ROS_UNRESOLVED_DEP-camera-info-manager-py}
 clang:
 - ${ROS_UNRESOLVED_DEP-clang}
 clang-tidy:
@@ -43,6 +51,8 @@ coinor-libipopt-dev:
 - ${ROS_UNRESOLVED_DEP-coinor-libipopt-dev}
 collada-dom:
 - collada-dom@meta-ros-common
+coreutils:
+- coreutils@openembedded-core
 cppcheck:
 - cppcheck@meta-ros-common
 curl:
@@ -62,6 +72,8 @@ eigen:
 - libeigen@meta-oe
 emacs:
 - emacs@meta-oe
+f2c:
+- ${ROS_UNRESOLVED_DEP-f2c}
 festival:
 - festival@meta-ros1
 ffmpeg:
@@ -71,7 +83,7 @@ flac:
 flex:
 - flex@openembedded-core
 fltk:
-- fltk@meta-oe
+- ${ROS_UNRESOLVED_DEP-fltk}
 fmt:
 - ${ROS_UNRESOLVED_DEP-fmt}
 ftdi-eeprom:
@@ -136,15 +148,19 @@ iwyu:
 joystick:
 - joystick@meta-ros-common
 jq:
-- jq@meta-oe
+- ${ROS_UNRESOLVED_DEP-jq}
 julius-voxforge:
 - ${ROS_UNRESOLVED_DEP-julius-voxforge}
+jython:
+- ${ROS_UNRESOLVED_DEP-jython}
 lcov:
 - lcov@meta-oe
 leveldb:
 - leveldb@meta-oe
 libblas-dev:
 - openblas@meta-ros-common
+libbluetooth-dev:
+- ${ROS_UNRESOLVED_DEP-libbluetooth-dev}
 libboost-chrono-dev:
 - boost@openembedded-core
 libboost-date-time-dev:
@@ -187,14 +203,18 @@ libcoin80-dev:
 - ${ROS_UNRESOLVED_DEP-libcoin80-dev}
 libconsole-bridge-dev:
 - console-bridge@meta-ros-common
+libcurl:
+- ${ROS_UNRESOLVED_DEP-libcurl}
+libcurl-dev:
+- ${ROS_UNRESOLVED_DEP-libcurl-dev}
+libdbus-dev:
+- ${ROS_UNRESOLVED_DEP-libdbus-dev}
 libdc1394-dev:
 - libdc1394@meta-multimedia
 libdmtx-dev:
 - ${ROS_UNRESOLVED_DEP-libdmtx-dev}
 libdw-dev:
 - elfutils@openembedded-core
-libfcl-dev:
-- fcl@meta-ros-common
 libffi-dev:
 - libffi@openembedded-core
 libflann-dev:
@@ -281,10 +301,16 @@ libopenblas-dev:
 - openblas@meta-ros-common
 libopencv-dev:
 - opencv@meta-oe
+libopenexr-dev:
+- ${ROS_UNRESOLVED_DEP-libopenexr-dev}
 libopenni-dev:
 - ${ROS_UNRESOLVED_DEP-libopenni-dev}
 libopenni2-dev:
 - ${ROS_UNRESOLVED_DEP-libopenni2-dev}
+libopenvdb:
+- ${ROS_UNRESOLVED_DEP-libopenvdb}
+libopenvdb-dev:
+- ${ROS_UNRESOLVED_DEP-libopenvdb-dev}
 liborocos-bfl:
 - ${ROS_UNRESOLVED_DEP-liborocos-bfl}
 liborocos-bfl-dev:
@@ -301,8 +327,12 @@ libpcl-all-dev:
 - pcl@meta-ros-common
 libpng-dev:
 - libpng@openembedded-core
+libpng12-dev:
+- ${ROS_UNRESOLVED_DEP-libpng12-dev}
 libpoco-dev:
 - poco@meta-oe
+libpq-dev:
+- ${ROS_UNRESOLVED_DEP-libpq-dev}
 libpqxx:
 - ${ROS_UNRESOLVED_DEP-libpqxx}
 libpqxx-dev:
@@ -339,6 +369,8 @@ libreadline:
 - readline@openembedded-core
 libreadline-dev:
 - readline@openembedded-core
+libserial-dev:
+- ${ROS_UNRESOLVED_DEP-libserial-dev}
 libsndfile1-dev:
 - libsndfile1@openembedded-core
 libspnav-dev:
@@ -401,6 +433,8 @@ libzmq3-dev:
 - zeromq@meta-oe
 linux-kernel-headers:
 - linux-libc-headers@openembedded-core
+lm-sensors:
+- lmsensors@meta-oe
 log4cxx:
 - log4cxx@meta-ros-common
 lz4:
@@ -425,20 +459,18 @@ ntpdate:
 - ${ROS_UNRESOLVED_DEP-ntpdate}
 ocl-icd-opencl-dev:
 - ${ROS_UNRESOLVED_DEP-ocl-icd-opencl-dev}
+omniorb:
+- ${ROS_UNRESOLVED_DEP-omniorb}
 opencl-headers:
 - opencl-headers@meta-oe
 opende:
 - ${ROS_UNRESOLVED_DEP-opende}
 opengl:
 - mesa@openembedded-core
-openni_launch:
-- ${ROS_UNRESOLVED_DEP-openni-launch}
 openssl:
 - openssl@openembedded-core
 pkg-config:
 - pkgconfig@openembedded-core
-portaudio19-dev:
-- portaudio-v19@meta-oe
 postgresql:
 - postgresql@meta-oe
 proj:
@@ -478,10 +510,12 @@ python-imaging:
 - ${PYTHON_PN}-pillow@meta-python
 python-libpgm-pip:
 - ${ROS_UNRESOLVED_DEP-python-libpgm-pip}
+python-lxml:
+- ${PYTHON_PN}-lxml@meta-python
 python-numpy:
 - ${PYTHON_PN}-numpy@openembedded-core
-python-opencv:
-- opencv@meta-oe
+python-omniorb:
+- ${ROS_UNRESOLVED_DEP-python-omniorb}
 python-percol:
 - ${ROS_UNRESOLVED_DEP-python-percol}
 python-pixel-ring-pip:
@@ -500,8 +534,6 @@ python-speechrecognition-pip:
 - ${ROS_UNRESOLVED_DEP-python-speechrecognition-pip}
 python-tabulate-pip:
 - ${ROS_UNRESOLVED_DEP-python-tabulate-pip}
-python-tk:
-- ${PYTHON_PN}-tkinter@openembedded-core
 python3:
 - python3@openembedded-core
 python3-argcomplete:
@@ -620,6 +652,8 @@ python3-requests:
 - python3-requests@meta-python
 python3-requests-oauthlib:
 - python3-requests-oauthlib@meta-python
+python3-rosdep:
+- ${ROS_UNRESOLVED_DEP-python3-rosdep}
 python3-rosdep-modules:
 - python3-rosdep@meta-ros-common
 python3-rospkg:
@@ -678,8 +712,6 @@ qtdeclarative5-dev:
 - qtdeclarative@meta-qt5
 qtmultimedia5-dev:
 - qtmultimedia@meta-qt5
-roseus:
-- ${ROS_UNRESOLVED_DEP-roseus}
 rsync:
 - rsync@openembedded-core
 rviz_mesh_plugin:
@@ -741,8 +773,14 @@ wxwidgets:
 - wxwidgets@meta-ros-common
 xclip:
 - ${ROS_UNRESOLVED_DEP-xclip}
+xfonts-100dpi:
+- ${ROS_UNRESOLVED_DEP-xfonts-100dpi}
+xfonts-75dpi:
+- ${ROS_UNRESOLVED_DEP-xfonts-75dpi}
 xterm:
 - xterm@meta-oe
+xvfb:
+- ${ROS_UNRESOLVED_DEP-xvfb}
 yaml-cpp:
 - yaml-cpp@meta-ros-common
 zbar:
