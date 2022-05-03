@@ -152,12 +152,14 @@ iproute2:
 - iproute2@openembedded-core
 ipython:
 - ${ROS_UNRESOLVED_DEP-ipython}
+iwyu:
+- ${ROS_UNRESOLVED_DEP-iwyu}
 java:
 - ${ROS_UNRESOLVED_DEP-java}
 joystick:
 - joystick@meta-ros-common
 jq:
-- jq@meta-oe
+- ${ROS_UNRESOLVED_DEP-jq}
 julius-voxforge:
 - ${ROS_UNRESOLVED_DEP-julius-voxforge}
 kakasi:
@@ -198,10 +200,16 @@ libccd-dev:
 - libccd@meta-ros-common
 libceres-dev:
 - ceres-solver@meta-oe
+libclang-dev:
+- ${ROS_UNRESOLVED_DEP-libclang-dev}
 libcoin80-dev:
 - ${ROS_UNRESOLVED_DEP-libcoin80-dev}
 libconsole-bridge-dev:
 - console-bridge@meta-ros-common
+libcurl:
+- ${ROS_UNRESOLVED_DEP-libcurl}
+libcurl-dev:
+- ${ROS_UNRESOLVED_DEP-libcurl-dev}
 libdc1394-dev:
 - libdc1394@meta-multimedia
 libdmtx-dev:
@@ -474,6 +482,8 @@ openssl:
 - openssl@openembedded-core
 osm2pgsql:
 - ${ROS_UNRESOLVED_DEP-osm2pgsql}
+phantomjs:
+- ${ROS_UNRESOLVED_DEP-phantomjs}
 pkg-config:
 - pkgconfig@openembedded-core
 postgresql:
@@ -723,18 +733,22 @@ python-wxtools:
 - wxpython@meta-ros-python2
 python-yaml:
 - ${PYTHON_PN}-pyyaml@meta-python
+python3:
+- python3@openembedded-core
 python3-catkin-pkg-modules:
 - python3-catkin-pkg@meta-ros-common
 python3-dev:
 - python3@openembedded-core
 python3-nose:
 - python3-nose@openembedded-core
+python3-numpy:
+- python3-numpy@openembedded-core
+python3-opencv:
+- opencv@meta-oe
 python3-rospkg-modules:
 - python3-rospkg@meta-ros-common
 python3-venv:
 - ${ROS_UNRESOLVED_DEP-python3-venv}
-python3-yaml:
-- python3-pyyaml@meta-python
 qt5-qmake:
 - qtbase@meta-qt5
 qtbase5-dev:
