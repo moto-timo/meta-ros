@@ -54,9 +54,9 @@ DEPENDS += "${ROS_EXPORT_DEPENDS} ${ROS_BUILDTOOL_EXPORT_DEPENDS}"
 
 RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
-# matches with: https://github.com/Kukanani/vision_msgs-release/archive/release/foxy/vision_msgs/2.0.0-1.tar.gz
+# matches with: https://github.com/ros2-gbp/vision_msgs-release/archive/release/foxy/vision_msgs/2.0.0-1.tar.gz
 ROS_BRANCH ?= "branch=release/foxy/vision_msgs"
-SRC_URI = "git://github.com/Kukanani/vision_msgs-release;${ROS_BRANCH};protocol=https"
+SRC_URI = "git://github.com/ros2-gbp/vision_msgs-release;${ROS_BRANCH};protocol=https"
 SRCREV = "2df716c5b95f605bf16e12e95f3a335d68db70ac"
 S = "${WORKDIR}/git"
 
