@@ -46,6 +46,8 @@ cwiid:
 cwiid-dev:
 - ${ROS_UNRESOLVED_DEP-cwiid-dev}
 dkms: []
+doxygen:
+- doxygen@meta-oe
 eigen:
 - libeigen@meta-oe
 ffmpeg:
@@ -73,26 +75,32 @@ graphviz:
 - graphviz@meta-ros-common
 gtest:
 - gtest@meta-oe
-gurumdds-2.7:
-- ${ROS_UNRESOLVED_DEP-gurumdds-2.7}
+gtk3:
+- gtk+3@openembedded-core
+gurumdds-2.8:
+- ${ROS_UNRESOLVED_DEP-gurumdds-2.8}
 ignition-common4:
 - ${ROS_UNRESOLVED_DEP-ignition-common4}
 ignition-edifice:
 - ${ROS_UNRESOLVED_DEP-ignition-edifice}
 ignition-gazebo5:
 - ${ROS_UNRESOLVED_DEP-ignition-gazebo5}
+ignition-gazebo5-plugins:
+- ${ROS_UNRESOLVED_DEP-ignition-gazebo5-plugins}
 ignition-gui5:
 - ${ROS_UNRESOLVED_DEP-ignition-gui5}
 ignition-math6:
 - ${ROS_UNRESOLVED_DEP-ignition-math6}
 ignition-msgs7:
 - ${ROS_UNRESOLVED_DEP-ignition-msgs7}
+ignition-plugin:
+- ${ROS_UNRESOLVED_DEP-ignition-plugin}
 ignition-rendering5:
 - ${ROS_UNRESOLVED_DEP-ignition-rendering5}
 ignition-transport10:
 - ${ROS_UNRESOLVED_DEP-ignition-transport10}
 jq:
-- jq@meta-oe
+- ${ROS_UNRESOLVED_DEP-jq}
 jupyter-notebook:
 - ${ROS_UNRESOLVED_DEP-jupyter-notebook}
 lcov:
@@ -171,12 +179,20 @@ libgpgme-dev:
 - gpgme@openembedded-core
 libgps:
 - gpsd@meta-oe
+libgstreamer-plugins-base1.0-dev:
+- gstreamer1.0-plugins-base@openembedded-core
+libgstreamer1.0-dev:
+- gstreamer1.0@openembedded-core
 libjpeg:
 - jpeg@openembedded-core
+libjsoncpp:
+- jsoncpp@meta-oe
+libjsoncpp-dev:
+- jsoncpp@meta-oe
 liblapack-dev:
 - lapack@meta-oe
 liblttng-ust-dev:
-- lttng-ust@openembedded-core
+- ${ROS_UNRESOLVED_DEP-liblttng-ust-dev}
 libmongoclient-dev:
 - mongodb@meta-oe
 libncurses-dev:
@@ -191,8 +207,14 @@ libopenblas-dev:
 - openblas@meta-ros-common
 libopencv-dev:
 - opencv@meta-oe
+libopenexr-dev:
+- ${ROS_UNRESOLVED_DEP-libopenexr-dev}
 libopenni-dev:
 - ${ROS_UNRESOLVED_DEP-libopenni-dev}
+libopenvdb:
+- ${ROS_UNRESOLVED_DEP-libopenvdb}
+libopenvdb-dev:
+- ${ROS_UNRESOLVED_DEP-libopenvdb-dev}
 libpcap:
 - libpcap@openembedded-core
 libpcl-all:
@@ -249,6 +271,8 @@ libusb-1.0:
 - libusb1@openembedded-core
 libusb-1.0-dev:
 - libusb1@openembedded-core
+libv4l-dev:
+- v4l-utils@meta-oe
 libvulkan-dev:
 - vulkan-headers@openembedded-core
 libwebsocketpp-dev:
@@ -257,12 +281,16 @@ libx11-dev:
 - libx11@openembedded-core
 libxaw:
 - libxaw@meta-oe
+libxi-dev:
+- libxi@openembedded-core
 libxml2:
 - libxml2@openembedded-core
 libxml2-utils:
 - libxml2@openembedded-core
 libxmlrpc-c++:
 - xmlrpc-c@meta-oe
+libxmu-dev:
+- libxmu@openembedded-core
 libxrandr:
 - libxrandr@openembedded-core
 libxxf86vm:
@@ -299,8 +327,6 @@ pyflakes3:
 - ${PYTHON_PN}-pyflakes@meta-ros-common
 python-enum34:
 - ${PYTHON_PN}-enum34@meta-python
-python-imaging:
-- ${PYTHON_PN}-pillow@meta-python
 python-lxml:
 - ${PYTHON_PN}-lxml@meta-python
 python-numpy:
@@ -325,6 +351,8 @@ python3-click:
 - python3-click@meta-python
 python3-collada:
 - ${ROS_UNRESOLVED_DEP-python3-collada}
+python3-conan-pip:
+- ${ROS_UNRESOLVED_DEP-python3-conan-pip}
 python3-cryptography:
 - python3-cryptography@meta-python
 python3-dev:
@@ -438,7 +466,7 @@ spirv-headers:
 spirv-tools:
 - spirv-tools@openembedded-core
 sqlite3:
-- sqlite3@openembedded-core
+- ${ROS_UNRESOLVED_DEP-sqlite3}
 subversion:
 - subversion@openembedded-core
 suitesparse:
